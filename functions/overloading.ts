@@ -9,7 +9,7 @@ const add4: Add = (a, b) => {
     return a + b
  }
 
- // Most common examples
+ // 가장 많이 쓰이는 예시
  type Config = {
     path: string,
     state: object
@@ -28,7 +28,7 @@ const add4: Add = (a, b) => {
     }
  }
 
- // Another exmaple
+ // 추가 예시
  type Add2 = {
     (a: number, b:number) : number,
     (a: number, b:number, c: number) : number

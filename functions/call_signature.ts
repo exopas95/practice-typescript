@@ -1,12 +1,12 @@
-// How to make function 1
+// 함수를 만드는 방법 1
 function add(a: number, b: number): number {
     return a + b
 }
 
-// How to make function 2 - arrow method
+// 함수를 만드는 방법 2 - arrow method
 const add2 = (a: number, b: number) => a + b;
 
-// Call Signature
-// If you write call signature, you don't have to explicit the types
+// Call Signature 
+// call signature를 사전에 만들어 두면 이후 타입을 명시적으로 작성해주지 않아도 된다.
 type ADD = (a: number, b: number) => number;
 const add3: ADD = (a, b) => a + b;

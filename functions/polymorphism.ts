@@ -1,10 +1,19 @@
-// generic - when we don't know the type
-// place holder of the types
-// generic decides the type of the argument and return value automatically
-// you don't lose type information unlike any
+// generic - 타입을 모를때 모든 타입을 사용할 수 있게 제너릭으로 선언한다.
+// 타입의 placeholder 라고 생각하면 된다.
+// generic은 타입이 들어오면, 그 타입을 유추하여 자동으로 그에 맞는 타입을 반환한다.
+// 'any' 보다 좋은 점은, generic은 타입을 잃어버리지 않는다는 점!
 
 type SuperPrint = {
     <T, V>(arr: T[], V): T
+
+    /**
+     * 아래의 것들을 모두 제너릭 한 줄로 쓸 수 있음
+     * (arr: number[]): void
+     * (arr: boolean[]): void
+     * (arr: stringp[]): void
+     * (arr: (number|boolean)[]): void
+     * -> <T>(arr: T[]): T
+     */
 }
 
 const superPrint: SuperPrint = (arr) => arr[0]
