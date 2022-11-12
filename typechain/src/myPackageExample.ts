@@ -1,0 +1,1 @@
+import { init } from "myPackage"    // exit은 d.ts에 작성하지 않았기 때문에 사용할 수 없음

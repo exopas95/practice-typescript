@@ -1,0 +1,13 @@
+{
+    "include": [
+        "src"
+    ],
+    "compilerOptions": {
+        "outDir": "build",  // 빌드 파일을 어디로 내보낼 것인지
+        "target": "ES6",    // 타입스크립트를 버전 몇의 자바스크립트로 변환할 것인지
+        "lib": ["ES6"],     // 웹페이지에서 작업할거면 "DOM" 옵션 추가
+        "strict": true,     // 매우 엄격하게 타입을 검토
+        "esModuleInterop": true,
+        "module": "CommonJS",
+    }
+}
